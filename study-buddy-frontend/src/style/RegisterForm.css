@@ -1,0 +1,43 @@
+.register-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #001f3f;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.register-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.register-form button:hover {
+  background-color: #003366;
+}
+
+.error-text {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.success-text {
+  color: green;
+  margin-top: 0.5rem;
+}

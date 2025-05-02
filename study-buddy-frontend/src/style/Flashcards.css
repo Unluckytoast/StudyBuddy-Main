@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.flashcards-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  height: 90vh;
+  box-sizing: border-box;
+}
+
+.flashcards-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.create-flashcard {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.create-flashcard h3 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.create-flashcard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-flashcard input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.create-flashcard input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.create-flashcard button {
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-flashcard button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.create-flashcard p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #777;
+}
+
+.flashcard-list {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.flashcard-list h3 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.flashcard-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flashcard-list li {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flashcard-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flashcard-list li strong {
+  color: #007bff;
+}
+
+.flashcard-list p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .flashcards-container {
+    padding: 20px;
+    height: auto;
+  }
+
+  .flashcards-container h2 {
+    font-size: 2rem;
+  }
+
+  .create-flashcard h3,
+  .flashcard-list h3 {
+    font-size: 1.5rem;
+  }
+
+  .create-flashcard input,
+  .create-flashcard button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .flashcard-list li {
+    padding: 12px;
+  }
+}
